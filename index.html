@@ -1,39 +1,17 @@
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="rot13.css">
-		
-		<title> ROT13 Encoder </title>
-	</head>
-	<body>
-		<h1>A ROT13 Encoder </h1 >
-		<p> About ROT13 ... </p>
-		<div id="input_area">
-			<textarea rows="1" cols="50" autofocus id="message"></textarea>
-			<br>
-			<button type="button" onclick="encode()" id="encode_button">Encodify Everything</button>
-		</div>
+<DOCTYPE html>
+    
+    <link rel="stylesheet" type="text/css" href="cipher.css">
 
-		<div id="output_area">
-			<p>
-			This is your encoded message:<br/>
-			<div id="output"></div>
-			</p>
-		<div>
-		<script type="text/javascript" src="rot13.js"></script>
-            <br>
-            
-            <div id="input_area">
-			<textarea rows="1" cols="50" autofocus id="message"></textarea>
-			<br>
-			<button type="button" onclick="encode()" id="encode_button">Encodify Everything</button>
-                <div id="output_area">
-			<p>
-			This is your encoded message:<br/>
-			<div id="output"></div>
-		</div>
-		<script type="text/javascript" src="number.js"></script>
-	</body>
-</html>
-
-
-
+    <title>Fun with ciphers</title>
+    <body>
+        
+        
+        
+        <h1 align="center">This website will take you into two different ciphers in which you can encrypt and decrypt your message based on the caesar cipher and a more fun one which uses symbols and numbers</h1>
+        <br>
+        
+        <button onclick="window.location.href='coursework cipher.html'">Click here for the Caesar Cipher</button>
+        <button onclick="window.location.href='number.html'">Click here for the symbol cipher</button>
+        
+        <button onclick="window.location.href='design.html'">Click here to see the website design page</button>
+    </body>
