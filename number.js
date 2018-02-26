@@ -8,7 +8,7 @@ function encode()
 	var plain_text=document.getElementById("message").value;
 	
 	var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-	var digits = ['1','2','3','4','5','6','7','8','9','!','?','%','<','$','^','&','*','(',')','_','-','+','=','#','~','>'];
+	var digits   = ['1','2','3','4','5','6','7','8','9','!','?','@','%','$','^','&','*','(',')','_','-','+','=','#','~','we'];
 	
 	var cypher_text= [];
 	for (var idx=0; idx<plain_text.length; idx++)
@@ -28,15 +28,16 @@ function encode()
 		}
 	}
 	
-	document.getElementById("output").innerHTML=cypher_text.join("");
+	document.getElementById("output").innerHTML= cypher_text;
 }
 
 function decrypt()
 {
 	var  symbols = document.getElementById("output").innerHTML;
+	console.log(symbols);
 	
 	var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-	var digits = ['1','2','3','4','5','6','7','8','9','!','?','%','<','$','^','&','*','(',')','_','-','+','=','#','~','>'];
+var digits   = ['1','2','3','4','5','6','7','8','9','!','?','@','%','$','^','&','*','(',')','_','-','+','=','#','~','we'];
 	
 	var cypher_text = [];
 	
